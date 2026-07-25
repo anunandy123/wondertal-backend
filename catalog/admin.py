@@ -1,4 +1,5 @@
 from django.contrib import admin
+import nested_admin
 from .models import Product, BookTemplate, PageTemplate, BeforeAfterSlide, ProductPreviewItem, ProductPreviewImage
 
 class PageTemplateInline(admin.TabularInline):
@@ -7,26 +8,27 @@ class PageTemplateInline(admin.TabularInline):
     fields = ('page_number', 'story_text', 'image_name', 'mask_image_name', 'is_preview')
     ordering = ('page_number',)
 
-class ProductPreviewItemInline(admin.TabularInline):
-    model = ProductPreviewItem
-    extra = 1
-    fields = ('item_type', 'order')
-    ordering = ('order',)
-
-class ProductPreviewImageInline(admin.TabularInline):
+class ProductPreviewImageInline(nested_admin.NestedTabularInline):
     model = ProductPreviewImage
     extra = 1
     fields = ('image', 'order')
     ordering = ('order',)
 
+class ProductPreviewItemInline(nested_admin.NestedTabularInline):
+    model = ProductPreviewItem
+    extra = 1
+    fields = ('item_type', 'order')
+    inlines = [ProductPreviewImageInline]
+    ordering = ('order',)
+
 @admin.register(ProductPreviewItem)
-class ProductPreviewItemAdmin(admin.ModelAdmin):
+class ProductPreviewItemAdmin(nested_admin.NestedModelAdmin):
     list_display = ('product', 'item_type', 'order', 'created_at')
     list_filter = ('item_type', 'product')
     inlines = [ProductPreviewImageInline]
 
 @admin.register(Product)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(nested_admin.NestedModelAdmin):
     list_display = ('title', 'age_range', 'price_softcover', 'original_price_softcover', 'price_hardcover', 'original_price_hardcover', 'rating', 'is_active')
     list_filter = ('is_active', 'age_range')
     search_fields = ('title', 'description')

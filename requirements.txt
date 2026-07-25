@@ -31,3 +31,4 @@ wcwidth==0.8.1
 whitenoise==6.12.0
 cairosvg==2.9.0
 pypdf==6.14.2
+django-nested-admin==4.1.6

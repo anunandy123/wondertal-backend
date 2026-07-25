@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 
 urlpatterns = [
+    path('_nested_admin/', include('nested_admin.urls')),
     path('admin/', admin.site.urls),
     path('', include('books.urls')),
     path('', include('reviews.urls')),
