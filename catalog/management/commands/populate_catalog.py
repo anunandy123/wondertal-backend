@@ -107,7 +107,7 @@ PRODUCTS_DATA = [
         "slug": "cosmic-memory-frame",
         "title": "Cosmic Memory Frame",
         "category": "frame",
-        "description": "Turn your favorite moments into magical space artifacts.",
+        "description": "Turn a cherished photo into a personalized, galaxy-inspired keepsake, displayed in a premium wooden frame.",
         "age_range": "All ages",
         "rating": 4.9,
         "review_count": 85,
@@ -124,52 +124,6 @@ PRODUCTS_DATA = [
             "title": "Cosmic Memory Frame",
             "description": "A customized space-themed memory frame featuring your child.",
             "age_group": "All ages"
-        }
-    },
-    {
-        "slug": "stardust-sticker-pack",
-        "title": "Stardust Sticker Pack",
-        "category": "sticker",
-        "description": "Durable, waterproof stickers featuring your child as the hero.",
-        "age_range": "3-12 yrs",
-        "rating": 4.8,
-        "review_count": 142,
-        "price_hardcover": 0,
-        "price_softcover": 374,
-        "original_price_softcover": 499,
-        "original_price_hardcover": 0,
-        "features": ["Waterproof & UV Resistant", "Vinyl Material", "Includes 15 Custom Stickers"],
-        "tags": ["Self-Expression", "Fun"],
-        "preview_images": [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBfvYakLsWO4lfiytNJCwqfd3C988ojziKsmAXhut5JqkjPCwYsTnm6VArY_pCk8ndNJBLwhqORnkE-buLGewcMgKz_Sv0yv-YI0JUiRuVXugAYVrH1CgGHdnDsRt_mgGcRC3RszMhFfNn3Yc1AfFEd9RMV5K5VF5rH_Z-HAtyU1sBMx4o55weG9AKeiEj2NJPe4VM_TJVJB6wDurIoK04pppbRocJON2_F6JdcYEkz5bpNj8w2hfvP"
-        ],
-        "template": {
-            "title": "Stardust Sticker Pack",
-            "description": "Customized cartoon stardust stickers featuring your child.",
-            "age_group": "3-12"
-        }
-    },
-    {
-        "slug": "galactic-name-labels",
-        "title": "Galactic Name Labels",
-        "category": "label",
-        "description": "Personalized labels for school gear that never get lost in orbit.",
-        "age_range": "5-10 yrs",
-        "rating": 4.7,
-        "review_count": 99,
-        "price_hardcover": 0,
-        "price_softcover": 639,
-        "original_price_softcover": 799,
-        "original_price_hardcover": 0,
-        "features": ["Scratch Resistant", "Super Sticky Glue", "Pack of 40 Labels"],
-        "tags": ["Responsibility", "Organization"],
-        "preview_images": [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBiH4JAp1i3KlSYauyvP8ya4BimL1SuCZIiLBi6wWIHues_m7Gt-ZS5v2uvtKEgvhslz_PCsDDgMRudL4dyqKZ2UJY9Cpp3DptQEU-82omZsr2hzRnXCEOEHEqzkkX81RL9O3XkcxCpD-SNYJW8Jrt4YlU4AXBExlHN2ZJ-eUYmwhH05SbmPgxlbXMTkYTdIRUiBa6eMgSiF3O53xLRURSNRAT4Y0pkz0-5AqEvbJAcu1yKyXuDyIhL"
-        ],
-        "template": {
-            "title": "Galactic Name Labels",
-            "description": "Customized school gear name labels featuring your child.",
-            "age_group": "5-10"
         }
     }
 ]
